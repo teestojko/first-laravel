@@ -6,11 +6,11 @@ use Illuminate\Http\Request;
 
 class TestController extends Controller
 {
-    public function index()
-        {
-            $item = [
-                'content' => 'パラメータを渡す',
-            ];
-            return view('index', $item);
-        }
+    public function index($text){
+        $item = [
+            'content' => 'パラメータを渡す',
+            'param' => $text
+        ];
+        return view('index', $item);
+    }
 }
