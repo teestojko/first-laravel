@@ -7,5 +7,6 @@
 </head>
 <body>
     <h1>ブラウザに画面を表示できた！</h1>
+    <p><?php echo $content ?></p>
 </body>
 </html>
