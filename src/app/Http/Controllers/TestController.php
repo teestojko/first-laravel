@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 
 class TestController extends Controller
 {
-    public function index($text){
+    public function index($text = "デフォルト")
+    {
         $item = [
             'content' => 'パラメータを渡す',
             'param' => $text
